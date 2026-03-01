@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MYROXX - Devis</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">MYROXX</div>
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="devis">
+<h3>Demande de devis</h3>
+<form action="mailto:myroxx.0x@gmail.com?subject=Demande%20de%20devis%20site%20web" method="post" enctype="text/plain">
+  <input type="text" name="nom" placeholder="Nom et Prénom" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <input type="tel" name="tel" placeholder="Téléphone" required>
+  <select name="type" required>
+    <option value="">Type de site</option>
+    <option>Vitrine</option>
+    <option>E-commerce</option>
+    <option>Réservation</option>
+  </select>
+  <input type="text" name="delai" placeholder="Délai souhaité" required>
+  <textarea name="message" rows="5" placeholder="Informations supplémentaires"></textarea>
+  <button type="submit">Envoyer le devis</button>
+</form>
+</section>
+
+<footer>
+<p>Contact : <a href="mailto:myroxx.0x@gmail.com">myroxx.0x@gmail.com</a></p>
+<p>© 2026 MYROXX - Agence Web Premium</p>
+</footer>
+
+<button id="topBtn" onclick="topFunction()">↑</button>
+<script>
+const topBtn=document.getElementById("topBtn");
+window.onscroll=()=>{topBtn.style.display=(document.body.scrollTop>300||document.documentElement.scrollTop>300)?"block":"none";};
+function topFunction(){window.scrollTo({top:0,behavior:"smooth"});}
+</script>
+
+</body>
+</html>
