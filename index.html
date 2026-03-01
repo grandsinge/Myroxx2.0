@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MYROXX - Accueil</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">MYROXX</div>
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <h1>Des sites web premium pour votre entreprise</h1>
+  <p>Design, performance et conversion optimisée pour mobile et PC.</p>
+  <div class="buttons">
+    <a href="devis.html"><button class="btn-gold">Obtenir un devis</button></a>
+    <a href="portfolio.html"><button class="btn-outline">Voir nos réalisations</button></a>
+  </div>
+</section>
+
+<section class="section" id="services">
+<h2>Nos Services</h2>
+<div class="services">
+  <div class="card">
+    <h3>Site Vitrine</h3>
+    <p>Design haut de gamme et optimisé pour tous les écrans.</p>
+    <a href="devis.html"><button class="btn-gold">Démarrer</button></a>
+  </div>
+  <div class="card">
+    <h3>E-commerce</h3>
+    <p>Boutique complète avec paiement sécurisé et gestion produits.</p>
+    <a href="devis.html"><button class="btn-gold">Démarrer</button></a>
+  </div>
+  <div class="card">
+    <h3>Réservation</h3>
+    <p>Prise de rendez-vous en ligne avec calendrier intégré.</p>
+    <a href="devis.html"><button class="btn-gold">Démarrer</button></a>
+  </div>
+</div>
+</section>
+
+<section class="testimonials">
+<h2>Témoignages clients</h2>
+<div class="testimonial-card"><p>"MYROXX a transformé notre site, résultat incroyable!" – Client A</p></div>
+<div class="testimonial-card"><p>"Rapide, professionnel et super design!" – Client B</p></div>
+<div class="testimonial-card"><p>"Nous avons vu une vraie différence après leur travail." – Client C</p></div>
+</section>
+
+<section class="faq">
+<h2>FAQ</h2>
+<details><summary>Quel est le délai pour créer un site ?</summary><p>En général 1 à 3 semaines selon la complexité.</p></details>
+<details><summary>Quels types de sites proposez-vous ?</summary><p>Vitrine, e-commerce et réservation en ligne.</p></details>
+<details><summary>Comment envoyer ma demande de devis ?</summary><p>Utilisez le formulaire "Obtenir un devis" en haut ou en bas de page.</p></details>
+</section>
+
+<section class="cta">
+<h2>Donnez à votre entreprise l’image qu’elle mérite</h2>
+<a href="devis.html"><button class="btn-gold">Obtenir un devis maintenant</button></a>
+</section>
+
+<footer>
+<p>Contact : <a href="mailto:myroxx.0x@gmail.com">myroxx.0x@gmail.com</a></p>
+<p>© 2026 MYROXX - Agence Web Premium</p>
+</footer>
+
+<button id="topBtn" onclick="topFunction()">↑</button>
+<script>
+const topBtn=document.getElementById("topBtn");
+window.onscroll=()=>{topBtn.style.display=(document.body.scrollTop>300||document.documentElement.scrollTop>300)?"block":"none";};
+function topFunction(){window.scrollTo({top:0,behavior:"smooth"});}
+</script>
+
+</body>
+</html>
