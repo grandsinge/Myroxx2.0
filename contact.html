@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MYROXX - Contact</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">MYROXX</div>
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="devis">
+<h3>Contactez-nous</h3>
+<form action="mailto:myroxx.0x@gmail.com?subject=Contact%20MYROXX" method="post" enctype="text/plain">
+  <input type="text" name="nom" placeholder="Nom et Prénom" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <input type="tel" name="tel" placeholder="Téléphone" required>
+  <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+  <button type="submit">Envoyer</button>
+</form>
+</section>
+
+<footer>
+<p>Contact : <a href="mailto:myroxx.0x@gmail.com">myroxx.0x@gmail.com</a></p>
+<p>© 2026 MYROXX - Agence Web Premium</p>
+</footer>
+
+<button id="topBtn" onclick="topFunction()">↑</button>
+<script>
+const topBtn=document.getElementById("topBtn");
+window.onscroll=()=>{topBtn.style.display=(document.body.scrollTop>300||document.documentElement.scrollTop>300)?"block":"none";};
+function topFunction(){window.scrollTo({top:0,behavior:"smooth"});}
+</script>
+
+</body>
+</html>
